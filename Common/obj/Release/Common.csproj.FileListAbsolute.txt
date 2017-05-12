@@ -1,0 +1,7 @@
+D:\college\Common\bin\Release\Maticsoft.Common.dll
+D:\college\Common\bin\Release\COM.Excel.dll
+D:\college\Common\bin\Release\Excel.dll
+D:\college\Common\bin\Release\OpenSmtp.dll
+D:\college\Common\bin\Release\OWC10Chart.dll
+D:\college\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+D:\college\Common\obj\Release\Maticsoft.Common.dll

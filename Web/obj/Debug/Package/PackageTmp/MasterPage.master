@@ -1,0 +1,299 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Maticsoft.Web.MasterPage" %>
+<%@ Register Src="~/Controls/copyright.ascx" TagName="copyright" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>模板页</title>
+    <link href="/style.css" type="text/css" rel="stylesheet" />
+    	<meta charset="utf-8">
+    <link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+	<style>
+	body{
+		font-family: "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	
+	.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 15px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .3em 2em .33em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .3em; 
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    }
+    .button:hover {
+	    text-decoration: none;
+    }
+    .button:active {
+	    position: relative;
+	    top: 1px;
+    }
+    /* white */
+    .white {
+	    color: #606060;
+	    border: solid 1px #b7b7b7;
+	    background: #fff;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	    background: -moz-linear-gradient(top,  #fff,  #ededed);
+	    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+    }
+    .white:hover {
+	    background: #ededed;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	    background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    }
+    .white:active {
+	    color: #999;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	    background: -moz-linear-gradient(top,  #ededed,  #fff);
+	    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+    }
+.main_table
+{
+    width:80%;
+    font-size:1.2em;
+    padding:1em;
+}
+.main_table td
+{
+    font-size:1em;
+    padding:0.5em;
+    text-align:center;
+    
+}
+.main_table2
+{
+    width:100%;
+    font-size:1.2em;
+     padding:1em;
+}
+.main_table2 td
+{
+    font-size:1em;
+    padding:0.5em;
+    
+}
+.red
+{
+    color:Red;
+}
+	</style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    	<!-- start header -->
+
+
+    <div align="center">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+<%--        <table cellspacing="0" cellpadding="5" width="700" border="0">
+            <tr>
+                <td bgcolor='<%=Application[Session["Style"].ToString()+"xtable_bgcolor"]%>'>
+                    <table cellspacing="0" bordercolordark='<%=Application[Session["Style"].ToString()+"xtable_bordercolordark"]%>'
+                        bordercolorlight='<%=Application[Session["Style"].ToString()+"xtable_bordercolorlight"]%>'
+                        cellpadding="5" width="100%" border="1">
+                        <tr bgcolor="#e4e4e4">
+                            <td bgcolor='<%=Application[Session["Style"].ToString()+"xtable_titlebgcolor"]%>'
+                                height="22" align="left">
+                                <%=TabTitle%> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="22">
+                            
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>--%>
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+  
+   
+    <uc1:copyright ID="copyright1" runat="server" />
+    <script src="../jquery-ui-1.12.1.custom/external/jquery/jquery.js" type="text/javascript"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $("#accordion").accordion();
+
+
+
+        var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+        $("#autocomplete").autocomplete({
+            source: availableTags
+        });
+
+
+
+        $(".button").button();
+        $("#button-icon").button({
+            icon: "ui-icon-gear",
+            showLabel: false
+        });
+
+
+
+        $("#radioset").buttonset();
+
+
+
+        $("#controlgroup").controlgroup();
+
+
+
+        $("#tabs").tabs();
+
+
+
+        $("#dialog").dialog({
+            autoOpen: false,
+            width: 400,
+            buttons: [
+		{
+		    text: "Ok",
+		    click: function () {
+		        $(this).dialog("close");
+		    }
+		},
+		{
+		    text: "Cancel",
+		    click: function () {
+		        $(this).dialog("close");
+		    }
+		}
+	]
+        });
+
+        // Link to open the dialog
+        $("#dialog-link").click(function (event) {
+            $("#dialog").dialog("open");
+            event.preventDefault();
+        });
+
+
+
+        $("#datepicker").datepicker({
+            inline: true
+        });
+
+
+
+        $("#slider").slider({
+            range: true,
+            values: [17, 67]
+        });
+
+
+
+        $("#progressbar").progressbar({
+            value: 20
+        });
+
+
+
+        $("#spinner").spinner();
+
+
+
+        $("#menu").menu();
+
+
+
+        $("#tooltip").tooltip();
+
+
+
+        $(".selectmenu").selectmenu();
+
+        // Hover states on the static widgets
+        $("#dialog-link, #icons li").hover(
+	function () {
+	    $(this).addClass("ui-state-hover");
+	},
+	function () {
+	    $(this).removeClass("ui-state-hover");
+	}
+);
+</script>
+    </form>
+</body>
+</html>

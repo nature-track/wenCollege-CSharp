@@ -1,0 +1,7 @@
+D:\college\DBUtility\bin\Release\Maticsoft.DBUtility.dll
+D:\college\DBUtility\bin\Release\IBatisNet.Common.dll
+D:\college\DBUtility\bin\Release\IBatisNet.DataMapper.dll
+D:\college\DBUtility\bin\Release\MySql.Data.dll
+D:\college\DBUtility\bin\Release\System.Data.SQLite.DLL
+D:\college\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+D:\college\DBUtility\obj\Release\Maticsoft.DBUtility.dll

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{font-family:"微软雅黑", "宋体";}
+.wrap{width:980px; margin:40px auto;}
+.clear{ clear:both;}
+
+
+h1{ text-align:center; color:#C00; font-size:40px;}
+input{ cursor:pointer;}
+.version_info{ color:#999; font-size:12px; text-align:center; width:100%; background:#fff url(../images/traincenterlogo.gif) no-repeat top center; padding-top:18px;position:fixed; bottom:3px;}
+/* 单行文本框 */
+.TextInputDiv{ vertical-align:middle;width:50px; padding:5px; padding-right:0; height:21px; background:url(../images/input_text_left.gif) no-repeat left; position:relative; display:inline-block; margin-left:5px; margin-right:10px;}
+.TextInputDiv .DivRight{ width:5px; height:31px; background:url(../images/input_text_right.gif) no-repeat right; position:absolute;top:0;right:-5px;}
+.TextInputDiv.hover{ background-position-y:-31px; color:red;}
+.TextInputDiv.hover .DivRight{ background-position-y:-31px;}
+.TextInputDiv.focus{ background-position-y:-62px;}
+.TextInputDiv.focus .DivRight{ background-position-y:-62px;}
+.TextInputDiv input{ width:50px; height:21px; line-height:21px; background:none; border:0;outline: none; font-size:16px; text-align:center;}
+
+/* 按钮 */
+.ButtonDiv{ padding-left:5px; padding-right:0; vertical-align:middle; height:33px; background: url(../images/btn_left.gif) no-repeat left; position:relative; display:inline-block; margin-left:5px; margin-right:10px;}
+.ButtonDiv input{ padding-left:5px;padding-right:10px; height:33px; line-height:33px; background:url(../images/btn_right.gif) no-repeat right; float:right;outline: none; border:0; font-size:16px;}
+.ButtonDiv.hover{ background-position-y:-33px;}
+.ButtonDiv.hover input{ background-position-y:-33px;}
+.ButtonDiv.focus{ background-position-y:-66px;}
+.ButtonDiv.focus input{ background-position-y:-66px;}
+
+/* 演讲比赛计时页面 */
+#time_page .wrap{ width:842px; position:relative;}
+#time_page #timer{padding:20px 0; border-radius:10px; position:relative; margin:20px auto;height:200px; font-size:120px; line-height:200px; border:1px solid #ccc; text-align:center; }
+#time_page #timer .notice{color:#C00;}
+#time_page .quick_bt{ width:842px; margin:0 auto; }
+#time_page .quick_bt a{ padding:10px 15px;display:inline-block;background-color: #FC0; cursor:pointer; font-size:20px; color:#000; text-align:center; border-radius:10px; margin-bottom:10px; margin-right:8px;}
+#time_page #action_bt,#time_page #reset_bt{ background-color:#333; color:#FC0; }
+#time_page .quick_bt a.disable,#time_page #action_bt.disable,#time_page #reset_bt.disable{ background-color:#ccc; color:#999; }
+#time_page #time_bt.disable{ color:#ccc;}
+#time_page #alert{ height:50px; line-height:50px;font-size:40px; position:absolute; width:100%; position:absolute; bottom:4px; text-align:center; color:#999; display:none;}

@@ -1,0 +1,15 @@
+E:\college\Model\bin\Debug\Maticsoft.Model.dll
+E:\college\Model\bin\Debug\Maticsoft.Model.pdb
+E:\college\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\college\Model\obj\Debug\Maticsoft.Model.dll
+E:\college\Model\obj\Debug\Maticsoft.Model.pdb
+D:\college\Model\bin\Debug\Maticsoft.Model.dll
+D:\college\Model\bin\Debug\Maticsoft.Model.pdb
+D:\college\Model\obj\Debug\Maticsoft.Model.dll
+D:\college\Model\obj\Debug\Maticsoft.Model.pdb
+D:\college\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\college\Model\bin\Debug\Maticsoft.Model.dll
+F:\college\Model\bin\Debug\Maticsoft.Model.pdb
+F:\college\Model\obj\Debug\ResolveAssemblyReference.cache
+F:\college\Model\obj\Debug\Maticsoft.Model.dll
+F:\college\Model\obj\Debug\Maticsoft.Model.pdb
