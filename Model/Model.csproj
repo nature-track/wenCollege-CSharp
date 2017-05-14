@@ -190,9 +190,17 @@
   <ItemGroup>
     <Content Include="bin\Debug\Maticsoft.Model.dll" />
     <Content Include="bin\Debug\Maticsoft.Model.pdb" />
+    <Content Include="bin\Release\Maticsoft.Model.dll" />
+    <Content Include="obj\Debug\Maticsoft.Model.dll" />
+    <Content Include="obj\Debug\Maticsoft.Model.pdb" />
+    <Content Include="obj\Debug\Model.csproj.FileListAbsolute.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Model.csprojResolveAssemblyReference.cache" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

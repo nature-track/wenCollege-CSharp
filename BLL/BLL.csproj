@@ -209,26 +209,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\Maticsoft.BLL.dll" />
-    <Content Include="bin\Debug\Maticsoft.BLL.pdb" />
-    <Content Include="obj\Debug\BLL.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\Maticsoft.BLL.dll" />
-    <Content Include="obj\Debug\Maticsoft.BLL.pdb" />
-    <Content Include="obj\Release\BLL.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\Maticsoft.BLL.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="obj\Debug\BLL.csprojResolveAssemblyReference.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
-    <None Include="obj\Release\BLL.csprojResolveAssemblyReference.cache" />
-    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

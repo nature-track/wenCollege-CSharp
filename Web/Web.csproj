@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,12 +14,16 @@
     <AssemblyName>Maticsoft.Web</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>3.5</OldToolsVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,8 +94,35 @@
     <Content Include="account_detail\Show.aspx" />
     <Content Include="Admin\test.aspx" />
     <Content Include="Admin\mLogin.aspx" />
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="bin\aliyun-net-sdk-core.dll" />
+    <Content Include="bin\aliyun-net-sdk-sms.dll" />
+    <Content Include="bin\COM.Excel.dll" />
+    <Content Include="bin\Excel.dll" />
+    <Content Include="bin\IBatisNet.Common.dll" />
+    <Content Include="bin\IBatisNet.DataMapper.dll" />
+    <Content Include="bin\LTP.Accounts.dll" />
+    <Content Include="bin\LtpPageControl.dll" />
+    <Content Include="bin\Maticsoft.BLL.dll" />
+    <Content Include="bin\Maticsoft.BLL.pdb" />
+    <Content Include="bin\Maticsoft.Common.dll" />
+    <Content Include="bin\Maticsoft.Common.pdb" />
+    <Content Include="bin\Maticsoft.DAL.dll" />
+    <Content Include="bin\Maticsoft.DAL.pdb" />
+    <Content Include="bin\Maticsoft.DBUtility.dll" />
+    <Content Include="bin\Maticsoft.DBUtility.pdb" />
+    <Content Include="bin\Maticsoft.Model.dll" />
+    <Content Include="bin\Maticsoft.Model.pdb" />
     <Content Include="bin\Maticsoft.Web.dll" />
     <Content Include="bin\Maticsoft.Web.pdb" />
+    <Content Include="bin\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\OpenSmtp.dll" />
+    <Content Include="bin\OWC10Chart.dll" />
+    <Content Include="bin\System.Data.SQLite.dll" />
     <Content Include="branch_company\Add.aspx" />
     <Content Include="branch_company\List.aspx" />
     <Content Include="branch_company\Modify.aspx" />
@@ -735,6 +767,56 @@
     <Content Include="hui_kuan_dan\Modify.aspx" />
     <Content Include="hui_kuan_dan\print.aspx" />
     <Content Include="hui_kuan_dan\Show.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\slides\1.jpg" />
+    <Content Include="images\slides\2.jpg" />
+    <Content Include="images\slides\3.jpg" />
+    <Content Include="images\textarea\notneeded\textarea-bl-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-bl-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-bl.gif" />
+    <Content Include="images\textarea\notneeded\textarea-bm-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-bm-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-bm.gif" />
+    <Content Include="images\textarea\notneeded\textarea-br-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-br-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-br.gif" />
+    <Content Include="images\textarea\notneeded\textarea-ml-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-ml-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-ml.gif" />
+    <Content Include="images\textarea\notneeded\textarea-mm-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-mm-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-mm.gif" />
+    <Content Include="images\textarea\notneeded\textarea-mr-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-mr-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-mr.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tl-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tl-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tl.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tm-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tm-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tm.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tr-focus.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tr-hover.gif" />
+    <Content Include="images\textarea\notneeded\textarea-tr.gif" />
+    <Content Include="images\textarea\textarea-mm-focus.gif" />
+    <Content Include="images\textarea\textarea-mm-hover.gif" />
+    <Content Include="images\textarea\textarea-mm.gif" />
+    <Content Include="images\textarea\textarea_bl.gif" />
+    <Content Include="images\textarea\textarea_bm.gif" />
+    <Content Include="images\textarea\textarea_br.gif" />
+    <Content Include="images\textarea\textarea_ml.gif" />
+    <Content Include="images\textarea\textarea_mr.gif" />
+    <Content Include="images\textarea\textarea_tl.gif" />
+    <Content Include="images\textarea\textarea_tm.gif" />
+    <Content Include="images\textarea\textarea_tr.gif" />
+    <Content Include="images\works\1.jpg" />
+    <Content Include="images\works\2.jpg" />
+    <Content Include="images\works\3.jpg" />
+    <Content Include="images\works\4.jpg" />
+    <Content Include="images\works\5.jpg" />
+    <Content Include="images\works\6.jpg" />
+    <Content Include="images\works\7.jpg" />
+    <Content Include="images\works\8.jpg" />
     <Content Include="img\avatar.png" />
     <Content Include="img\bg_direction_nav.png" />
     <Content Include="img\glyphicons-halflings-white.png" />
@@ -1522,6 +1604,85 @@
     <Content Include="supplier\List.aspx" />
     <Content Include="supplier\Modify.aspx" />
     <Content Include="supplier\Show.aspx" />
+    <Content Include="teachersday\css\bootstrap.min.css" />
+    <Content Include="teachersday\css\caption-hover.css" />
+    <Content Include="teachersday\css\circle-hover.css" />
+    <Content Include="teachersday\css\font-awesome.min.css" />
+    <Content Include="teachersday\css\slider.css" />
+    <Content Include="teachersday\css\style.css" />
+    <Content Include="teachersday\images\banner1.jpg" />
+    <Content Include="teachersday\images\banner2.jpg" />
+    <Content Include="teachersday\images\banner3.jpg" />
+    <Content Include="teachersday\images\banner4.jpg" />
+    <Content Include="teachersday\images\bg.jpg" />
+    <Content Include="teachersday\images\blog1.jpg" />
+    <Content Include="teachersday\images\blog2.jpg" />
+    <Content Include="teachersday\images\blog3.jpg" />
+    <Content Include="teachersday\images\blog4.jpg" />
+    <Content Include="teachersday\images\blur.jpg" />
+    <Content Include="teachersday\images\farm1.jpg" />
+    <Content Include="teachersday\images\farm2.jpg" />
+    <Content Include="teachersday\images\farm3.jpg" />
+    <Content Include="teachersday\images\fog.jpg" />
+    <Content Include="teachersday\images\grass.jpg" />
+    <Content Include="teachersday\images\green.jpg" />
+    <Content Include="teachersday\images\leaf.jpg" />
+    <Content Include="teachersday\images\next.gif" />
+    <Content Include="teachersday\images\port1.jpg" />
+    <Content Include="teachersday\images\port2.jpg" />
+    <Content Include="teachersday\images\port3.jpg" />
+    <Content Include="teachersday\images\port4.jpg" />
+    <Content Include="teachersday\images\port5.jpg" />
+    <Content Include="teachersday\images\port6.jpg" />
+    <Content Include="teachersday\images\prev.gif" />
+    <Content Include="teachersday\images\rain.jpg" />
+    <Content Include="teachersday\images\service1.jpg" />
+    <Content Include="teachersday\images\service2.jpg" />
+    <Content Include="teachersday\images\service3.jpg" />
+    <Content Include="teachersday\images\service4.jpg" />
+    <Content Include="teachersday\images\sky.jpg" />
+    <Content Include="teachersday\images\teachers\IMG_0653.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_0871.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_4986.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5056.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5161.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5280.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5300.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5341.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5366.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5569.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_5580.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9199.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9422.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9528.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9559.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9586.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9670.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9687.JPG" />
+    <Content Include="teachersday\images\teachers\IMG_9711.JPG" />
+    <Content Include="teachersday\images\teachers\严尚维.JPG" />
+    <Content Include="teachersday\images\teachers\史金才.JPG" />
+    <Content Include="teachersday\images\teachers\吴珍芳.JPG" />
+    <Content Include="teachersday\images\teachers\张德祥.JPG" />
+    <Content Include="teachersday\images\teachers\方炳虎.JPG" />
+    <Content Include="teachersday\images\teachers\曹珍.JPG" />
+    <Content Include="teachersday\images\teachers\李玉锁.JPG" />
+    <Content Include="teachersday\images\teachers\王聪.JPG" />
+    <Content Include="teachersday\images\teachers\王连想.JPG" />
+    <Content Include="teachersday\images\teachers\王青来.JPG" />
+    <Content Include="teachersday\images\teachers\蔡华金.JPG" />
+    <Content Include="teachersday\images\teachers\覃健萍.JPG" />
+    <Content Include="teachersday\images\teachers\邵旺志.JPG" />
+    <Content Include="teachersday\images\teachers\陈峰.JPG" />
+    <Content Include="teachersday\index.html" />
+    <Content Include="teachersday\js\bootstrap.min.js" />
+    <Content Include="teachersday\js\classie.js" />
+    <Content Include="teachersday\js\index.js" />
+    <Content Include="teachersday\js\index2.js" />
+    <Content Include="teachersday\js\jquery.min.js" />
+    <Content Include="teachersday\js\modernizr.custom.js" />
+    <Content Include="teachersday\js\SmoothScroll.min.js" />
+    <Content Include="teachersday\js\TweenMax.min.js" />
     <Content Include="teacher\Add.aspx" />
     <Content Include="teacher\confirm.aspx" />
     <Content Include="teacher\List.aspx" />
@@ -1595,6 +1756,21 @@
     <Content Include="tools\print_name.aspx" />
     <Content Include="tools\print_name3.aspx" />
     <Content Include="tools\schedule.aspx" />
+    <Content Include="uploadfile\201607\14\275F1D69.jpg" />
+    <Content Include="uploadfile\201607\14\624432BE.png" />
+    <Content Include="uploadfile\201607\14\9B85EF93.jpg" />
+    <Content Include="uploadfile\201607\14\A46CA009.jpg" />
+    <Content Include="uploadfile\201607\14\B3A566D6.jpg" />
+    <Content Include="uploadfile\201607\14\D81B9FB0.jpg" />
+    <Content Include="uploadfile\201607\14\D9BE8EEC.jpg" />
+    <Content Include="uploadfile\201607\14\E3476519.png" />
+    <Content Include="uploadfile\201607\14\E3D6DF27.jpg" />
+    <Content Include="uploadfile\201607\15\46B870E2.png" />
+    <Content Include="uploadfile\201607\15\9B85EF93.jpg" />
+    <Content Include="uploadfile\201607\15\A46CA009.jpg" />
+    <Content Include="uploadfile\201607\15\B2CBFB2D.png" />
+    <Content Include="uploadfile\201607\15\C487A7FB.jpg" />
+    <Content Include="uploadfile\201607\15\CC6A188D.jpg" />
     <Content Include="video\css\video-js.min.css" />
     <Content Include="video\index.html" />
     <Content Include="video\js\video.min.js" />
@@ -2521,6 +2697,18 @@
     <Compile Include="m_weixin\mem_info_fill.aspx.designer.cs">
       <DependentUpon>mem_info_fill.aspx</DependentUpon>
     </Compile>
+    <Compile Include="m_weixin\message_model\req\BaseMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\ImageMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\LinkMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\LocationMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\TextMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\VoiceMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\Article.cs" />
+    <Compile Include="m_weixin\message_model\resp\BaseMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\Music.cs" />
+    <Compile Include="m_weixin\message_model\resp\MusicMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\NewsMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\TextMessage.cs" />
     <Compile Include="peixunban1\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3679,6 +3867,8 @@
     <None Include="Service\GraduateChannel\GraduateApply\ImgUpLoads\fa717699-b5bf-4bda-b06a-029e9bb8065c.xlsx" />
     <None Include="Service\GraduateChannel\GraduateApply\ImgUpLoads\fbabd6d0-e652-46f9-9939-759b59b0685a.xlsx" />
     <Content Include="Site1.Master" />
+    <Content Include="teachersday\fonts\fontawesome-webfont.ttf" />
+    <Content Include="teachersday\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="tools\css\smoothness\Descr.WD3" />
     <None Include="tools\css\smoothness\images\Descr.WD3" />
     <None Include="video\47peixun.mp4" />
@@ -3690,8 +3880,13 @@
     <Folder Include="Components\" />
     <Folder Include="obj\Debug\" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -25,3 +25,11 @@ F:\college\Common\bin\Debug\OWC10Chart.dll
 F:\college\Common\obj\Debug\ResolveAssemblyReference.cache
 F:\college\Common\obj\Debug\Maticsoft.Common.dll
 F:\college\Common\obj\Debug\Maticsoft.Common.pdb
+F:\perwork\wenCollege-CSharp\Common\bin\Debug\Maticsoft.Common.dll
+F:\perwork\wenCollege-CSharp\Common\bin\Debug\Maticsoft.Common.pdb
+F:\perwork\wenCollege-CSharp\Common\bin\Debug\COM.Excel.dll
+F:\perwork\wenCollege-CSharp\Common\bin\Debug\Excel.dll
+F:\perwork\wenCollege-CSharp\Common\bin\Debug\OpenSmtp.dll
+F:\perwork\wenCollege-CSharp\Common\bin\Debug\OWC10Chart.dll
+F:\perwork\wenCollege-CSharp\Common\obj\Debug\Maticsoft.Common.dll
+F:\perwork\wenCollege-CSharp\Common\obj\Debug\Maticsoft.Common.pdb

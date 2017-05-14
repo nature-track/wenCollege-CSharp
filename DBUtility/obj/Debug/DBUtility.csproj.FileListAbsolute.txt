@@ -25,3 +25,11 @@ F:\college\DBUtility\bin\Debug\System.Data.SQLite.DLL
 F:\college\DBUtility\obj\Debug\ResolveAssemblyReference.cache
 F:\college\DBUtility\obj\Debug\Maticsoft.DBUtility.dll
 F:\college\DBUtility\obj\Debug\Maticsoft.DBUtility.pdb
+F:\perwork\wenCollege-CSharp\DBUtility\bin\Debug\Maticsoft.DBUtility.dll
+F:\perwork\wenCollege-CSharp\DBUtility\bin\Debug\Maticsoft.DBUtility.pdb
+F:\perwork\wenCollege-CSharp\DBUtility\bin\Debug\IBatisNet.Common.dll
+F:\perwork\wenCollege-CSharp\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+F:\perwork\wenCollege-CSharp\DBUtility\bin\Debug\MySql.Data.dll
+F:\perwork\wenCollege-CSharp\DBUtility\bin\Debug\System.Data.SQLite.DLL
+F:\perwork\wenCollege-CSharp\DBUtility\obj\Debug\Maticsoft.DBUtility.dll
+F:\perwork\wenCollege-CSharp\DBUtility\obj\Debug\Maticsoft.DBUtility.pdb
