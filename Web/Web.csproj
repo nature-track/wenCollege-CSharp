@@ -65,6 +65,10 @@
       <HintPath>..\Lib\Microsoft.Web.UI.WebControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -1523,6 +1527,7 @@
     <Content Include="m_weixin\inv_index.aspx" />
     <Content Include="m_weixin\mem_info_fill.aspx" />
     <Content Include="MP_verify_bvy2q0xxa5FGnuq6.txt" />
+    <Content Include="m_weixin\WechatTest001.aspx" />
     <Content Include="peixunban1\Add.aspx" />
     <Content Include="peixunban1\branch_add.aspx" />
     <Content Include="peixunban1\branch_add2.aspx" />
@@ -2697,18 +2702,31 @@
     <Compile Include="m_weixin\mem_info_fill.aspx.designer.cs">
       <DependentUpon>mem_info_fill.aspx</DependentUpon>
     </Compile>
-    <Compile Include="m_weixin\message_model\req\BaseMessage.cs" />
-    <Compile Include="m_weixin\message_model\req\ImageMessage.cs" />
-    <Compile Include="m_weixin\message_model\req\LinkMessage.cs" />
-    <Compile Include="m_weixin\message_model\req\LocationMessage.cs" />
-    <Compile Include="m_weixin\message_model\req\TextMessage.cs" />
-    <Compile Include="m_weixin\message_model\req\VoiceMessage.cs" />
-    <Compile Include="m_weixin\message_model\resp\Article.cs" />
-    <Compile Include="m_weixin\message_model\resp\BaseMessage.cs" />
-    <Compile Include="m_weixin\message_model\resp\Music.cs" />
-    <Compile Include="m_weixin\message_model\resp\MusicMessage.cs" />
-    <Compile Include="m_weixin\message_model\resp\NewsMessage.cs" />
-    <Compile Include="m_weixin\message_model\resp\TextMessage.cs" />
+    <Compile Include="m_weixin\message_core\CacheUtils.cs" />
+    <Compile Include="m_weixin\message_core\CoreUtils.cs" />
+    <Compile Include="m_weixin\message_core\ResponseTemplate.cs" />
+    <Compile Include="m_weixin\message_core\TokenUtils.cs" />
+    <Compile Include="m_weixin\message_core\UserServices.cs" />
+    <Compile Include="m_weixin\message_model\entity\UserInfo.cs" />
+    <Compile Include="m_weixin\message_model\req\ReqBaseMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\ReqImageMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\ReqLinkMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\ReqLocationMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\ReqTextMessage.cs" />
+    <Compile Include="m_weixin\message_model\req\ReqVoiceMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\RespArticle.cs" />
+    <Compile Include="m_weixin\message_model\resp\RespBaseMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\RespMusic.cs" />
+    <Compile Include="m_weixin\message_model\resp\RespMusicMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\RespNewsMessage.cs" />
+    <Compile Include="m_weixin\message_model\resp\RespTextMessage.cs" />
+    <Compile Include="m_weixin\WechatTest001.aspx.cs">
+      <DependentUpon>WechatTest001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="m_weixin\WechatTest001.aspx.designer.cs">
+      <DependentUpon>WechatTest001.aspx</DependentUpon>
+    </Compile>
     <Compile Include="peixunban1\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3776,6 +3794,7 @@
     <None Include="js\jquery_mobile\page-events\logevents-3.php" />
     <None Include="js\jquery_mobile\page-events\logevents.php" />
     <Content Include="Masterpage_nocss.Master" />
+    <Content Include="packages.config" />
     <None Include="photos\images\Thumbs.db" />
     <None Include="photos\uploadify\com\adobe\air\logging\FileTarget.as" />
     <None Include="photos\uploadify\com\adobe\crypto\HMAC.as" />

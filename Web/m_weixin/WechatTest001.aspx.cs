@@ -1,5 +1,6 @@
 ﻿
 using Maticsoft.Web.m_weixin.message_core;
+using Maticsoft.Web.m_weixin.message_model.entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,14 +16,15 @@ namespace Maticsoft.Web.m_weixin
         protected void Page_Load(object sender, EventArgs e)
         {
             //string uriTemplate = "https://api.weixin.qq.com/cgi-bin/menu/get?access_token={0}";
-            string uriTemplate = "https://api.weixin.qq.com/cgi-bin/user/info?access_token={0}&openid={1}&lang=zh_CN";
+            /*string uriTemplate = "https://api.weixin.qq.com/cgi-bin/user/info?access_token={0}&openid={1}&lang=zh_CN";
             string access_token = TokenUtils.getAccessToken();
             label1.Text = access_token;
             string uri = String.Format(uriTemplate, access_token, "oPFZYwanSioNrWovMwut_W_cy0h8");
 
             WebClient requestClient = new WebClient();
-            string json = requestClient.DownloadString(uri);
-            label2.Text = json;
+            string json = requestClient.DownloadString(uri);*/
+            UserInfo userInfo = UserServices.getUserInfo("oPFZYwanSioNrWovMwut_W_cy0h8");
+            label2.Text = userInfo.nickname;
         }
     }
 }

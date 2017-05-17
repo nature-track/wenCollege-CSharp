@@ -220,3 +220,5 @@ F:\perwork\wenCollege-CSharp\Web\obj\Debug\Maticsoft.Web.Global.resources
 F:\perwork\wenCollege-CSharp\Web\obj\Debug\Web.csproj.GenerateResource.Cache
 F:\perwork\wenCollege-CSharp\Web\obj\Debug\Maticsoft.Web.dll
 F:\perwork\wenCollege-CSharp\Web\obj\Debug\Maticsoft.Web.pdb
+F:\perwork\wenCollege-CSharp\Web\bin\Newtonsoft.Json.dll
+F:\perwork\wenCollege-CSharp\Web\bin\Newtonsoft.Json.xml

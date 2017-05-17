@@ -23,6 +23,7 @@ namespace Maticsoft.Web.m_weixin.message_core
                 string uri = String.Format(uriTemplate, APP_ID, SECRET);
 
                 WebClient requestClient = new WebClient();
+                requestClient.Encoding = System.Text.Encoding.UTF8;
                 string json = requestClient.DownloadString(uri);
                 
                 JObject jsonObj = JObject.Parse(json);
@@ -59,8 +60,9 @@ namespace Maticsoft.Web.m_weixin.message_core
                 string uriTemplate = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={0}&secret={1}&code={2}&grant_type=authorization_code";
                 string uri = String.Format(uriTemplate, APP_ID, SECRET, code);
 
-                WebClient requestClinet = new WebClient();
-                string json = requestClinet.DownloadString(uri);
+                WebClient requestClient = new WebClient();
+                requestClient.Encoding = System.Text.Encoding.UTF8;
+                string json = requestClient.DownloadString(uri);
 
                 JObject jsonObj = JObject.Parse(json);
                 Dictionary<string, string> properties = jsonObj.Properties().ToDictionary(item => item.Name, item => item.Value.ToString());

@@ -17,3 +17,4 @@ F:\perwork\wenCollege-CSharp\Model\bin\Debug\Maticsoft.Model.dll
 F:\perwork\wenCollege-CSharp\Model\bin\Debug\Maticsoft.Model.pdb
 F:\perwork\wenCollege-CSharp\Model\obj\Debug\Maticsoft.Model.dll
 F:\perwork\wenCollege-CSharp\Model\obj\Debug\Maticsoft.Model.pdb
+F:\perwork\wenCollege-CSharp\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
